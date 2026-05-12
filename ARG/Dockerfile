@@ -3,5 +3,5 @@ ARG version
 FROM almalinux:${version:-8}
 ARG NAME="Ram Charan" \
     JOB="DevOps Engineer"
-RUN echo "I am ${NAME} using almalinux version ${version} in this docker image"
+RUN echo "I am ${NAME} using almalinux version ${version} in this docker image" && sleep 4
 CMD ["sleep", "200"]
